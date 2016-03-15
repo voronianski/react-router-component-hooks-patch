@@ -12,8 +12,8 @@ npm install react-router-hooks-patch --save
 
 ### `patchRouteHooks(Route: <Route>, data: ?Object)`;
 
-- `Route` - [Route](https://github.com/reactjs/react-router/blob/master/docs/Glossary.md#route) which component you want to patch with static `onEnter`/`onLeave` methods. **Children routes will be patched too.**
-- `data` - pass data that you need in your methods. It's perfect place for instances of some sort of data abstraction (e.g. Flux/Redux in universal apps).
+- `Route` - [Route](https://github.com/reactjs/react-router/blob/master/docs/Glossary.md#route) or array or Routes which component you want to patch with static `onEnter`/`onLeave` methods. **Children routes will be patched too.**
+- `data` - pass data that you need in your methods. It's perfect place for instances of some sort of data abstraction (e.g. Flux/Redux in universal apps). **Passed data object will be the first argument in `onEnter`/`onLeave` functions.
 
 ## Requirements
 
