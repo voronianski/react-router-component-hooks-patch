@@ -26,18 +26,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Route from 'react-router/lib/Route';
 import browserHistory from 'react-router/lib'
-import patchRouteHooks from 'react-router-hooks-patch';
++import patchRouteHooks from 'react-router-hooks-patch';
 import Flux from '../path/to/flux'; // or any data abstraction
 
 class App extends React.Component {
 +   static onEnter({ flux }, nextState, replace, done) {
-        // do some async actions and call done when you're ready
-        done();
-    }
++        // do some async actions and call done when you're ready
++        done();
++   }
 
-    static onLeave({ flux }) {
-        // receives only passed data object as argument
-    }
++   static onLeave({ flux }) {
++       // receives only passed data object as argument
++   }
 
     render() {
         return <div>...</div>;
@@ -46,18 +46,18 @@ class App extends React.Component {
 
 const routes = (
     <Route path="/" component={App}>
-        <Route path="about" component={About} onEnter={({ flux }) => {
-            // methods on Route also get patched
-        }} />
++       <Route path="about" component={About} onEnter={({ flux }) => {
++           // methods on Route also get patched
++       }} />
         <Route path="users" component={Users} />
     </Route>
 );
 
 const flux = new Flux();
-const patchedRoutes = patchRouteHooks(routes, { flux });
++const patchedRoutes = patchRouteHooks(routes, { flux });
 
 ReactDOM.render(
-    <Router history={browserHistory} routes={patchedRoutes} />,
++   <Router history={browserHistory} routes={patchedRoutes} />,
     document.getElementById('app');
 );
 ```
