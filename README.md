@@ -30,7 +30,7 @@ import patchRouteHooks from 'react-router-hooks-patch';
 import Flux from '../path/to/flux'; // or any data abstraction
 
 class App extends React.Component {
-+++    static onEnter({ flux }, nextState, replace, done) {
++   static onEnter({ flux }, nextState, replace, done) {
         // do some async actions and call done when you're ready
         done();
     }
