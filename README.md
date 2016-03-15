@@ -21,7 +21,7 @@ Patch works only with latest react-router version (`>= 2`, see [upgrade guide](h
 
 ## Example
 
-```javascript
+```diff
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Route from 'react-router/lib/Route';
