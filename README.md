@@ -1,7 +1,7 @@
 # react-router-hooks-patch
 
 [![npm version](http://badge.fury.io/js/react-router-hooks-patch.svg)](http://badge.fury.io/js/react-router-hooks-patch)
-[![build status](http://img.shields.io/travis/voronianski/react-router-hooks-patch.js.svg?style=flat)](https://travis-ci.org/voronianski/react-router-hooks-patch.js)
+[![build status](http://img.shields.io/travis/voronianski/react-router-hooks-patch.svg?style=flat)](https://travis-ci.org/voronianski/react-router-hooks-patch)
 
 > Patch [react-router](https://github.com/reactjs/react-router)'s [Route](https://github.com/reactjs/react-router/blob/master/docs/Glossary.md#route) components with static hook methods `onEnter`/`onLeave`.
 
