@@ -2,7 +2,7 @@
 
 [![npm version](http://badge.fury.io/js/react-router-hooks-patch.svg)](http://badge.fury.io/js/react-router-hooks-patch)
 
-> Patch react-router route handler components with static hook methods `onEnter`/`onLeave`.
+> Patch [react-router](https://github.com/reactjs/react-router)'s [Route](https://github.com/reactjs/react-router/blob/master/docs/Glossary.md#route) components with static hook methods `onEnter`/`onLeave`.
 
 ## Install
 
@@ -14,7 +14,7 @@ npm install react-router-hooks-patch --save
 
 ### `patchRouteHooks(Route: <Route>, data: ?Object)`;
 
-- `Route` - [Route](https://github.com/reactjs/react-router/blob/master/docs/Glossary.md#route) or array or Routes which component you want to patch with static `onEnter`/`onLeave` methods. **Children routes will be patched too.**
+- `Route` - [Route](https://github.com/reactjs/react-router/blob/master/docs/Glossary.md#route) or array or [Routes](https://github.com/reactjs/react-router/blob/master/docs/Glossary.md#route) which component you want to patch with static `onEnter`/`onLeave` methods. **Children routes will be patched too.**
 - `data` - pass data that you need in your methods. It's perfect place for instances of some sort of data abstraction (e.g. Flux/Redux in universal apps). **Passed data object will be the first argument in `onEnter`/`onLeave` functions.
 
 ### Requirements

@@ -1,7 +1,7 @@
 {
   "name": "react-router-hooks-patch",
   "version": "1.0.0",
-  "description": "Patch react-router Components with hook methods onEnter/onLeave",
+  "description": "Patch react-router Route components with static hook methods onEnter/onLeave",
   "main": "lib/patchRouteHooks.js",
   "scripts": {
     "build": "babel src --out-dir lib",
