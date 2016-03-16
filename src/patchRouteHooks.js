@@ -15,8 +15,8 @@ function patchRouteHooks (Route, patchData = {}) {
         ...Route,
         props: {
             ...Route.props,
-            onEnter: component && component.onEnter && component.onEnter.bind(null, patchData) || onEnter && onEnter.bind(null, patchData),
-            onLeave: component && component.onLeave && component.onLeave.bind(null, patchData) || onLeave && onLeave.bind(null, patchData),
+            onEnter: component && component.onEnter && component.onEnter.bind(Route, patchData) || onEnter && onEnter.bind(Route, patchData),
+            onLeave: component && component.onLeave && component.onLeave.bind(Route, patchData) || onLeave && onLeave.bind(Route, patchData),
             children: children ? _patchChildren(children) : null
         }
     };
